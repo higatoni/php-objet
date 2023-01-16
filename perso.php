@@ -61,17 +61,14 @@
                 return "Mon nom est ".$this->getNom().", j'ai ".$this->getPv()."PV et mon expérience est de ".$this->getXp()."<br>".$this->isAlive()."<br>";
             }
         }
-        $golum=new perso("Golum", 10);
-        echo $golum->info();
+        // $golum=new perso("Golum", 10);
+        // echo $golum->info();
 
-        $frodon=new perso("Frodon",2);
-        echo $frodon->info();
-        $golum->attaque($frodon,10,1);
-        echo $golum->info();
-        echo $frodon->info();
-        
-
-    
+        // $frodon=new perso("Frodon",2);
+        // echo $frodon->info();
+        // $golum->attaque($frodon,10,1);
+        // echo $golum->info();
+        // echo $frodon->info();
     ?>
 </body>
 </html>

@@ -52,9 +52,11 @@
             // Méthodes
             public function manger($miam){
                 $this->setPv($this->getPv()+$miam);
+                return $this;
             }
             public function diminuer($miam) {
                 $this->setPv($this->getPv()-$miam);
+                return $this;
             }
         
             public function isAlive(){
@@ -69,10 +71,9 @@
         $clyde=new fantomes("Clyde", "jaune");
         echo $clyde->info();
 
-        $dolly=new fantomes("Dolly","rose");
-        echo $dolly->info();
-        $dolly->manger(10);
-        $dolly->setVelocite(2);
+        $dolly=(new fantomes("Dolly","rose"))
+            ->manger(10)
+            ->setVelocite(2);
         echo $dolly->info();
 
         $clyde->diminuer(5);
